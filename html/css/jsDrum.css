@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+  background: url(img/zoltan-cse-748782-unsplash.jpg) bottom center;
   background-size: cover;
 }
 body,html {
@@ -18,7 +18,7 @@ body,html {
 }
 
 .key {
-  border: .4rem solid black;
+  border: 2px solid #555;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
@@ -26,15 +26,15 @@ body,html {
   transition: all .07s ease;
   width: 10rem;
   text-align: center;
-  color: white;
-  background: rgba(0,0,0,0.4);
-  text-shadow: 0 0 .5rem black;
+  color: #ffff;
+  background: rgba(0, 0, 0, 0.79);
+  text-shadow: 0 0 1px #0000;
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #ffc600;
-  box-shadow: 0 0 1rem #ffc600;
+  border-color: #e67e22;
+  box-shadow: 0 0 1rem #e67e22;
 }
 
 kbd {
@@ -46,5 +46,5 @@ kbd {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ffc600;
+  color: #e67e22;
 }

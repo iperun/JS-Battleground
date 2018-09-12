@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="jsDrume.css">
+  <link rel="stylesheet" href="css/jsDrum.css">
 </head>
+
 <body>
 
 
@@ -47,20 +49,25 @@
     </div>
   </div>
 
-  <audio data-key="65" src="sounds/clap.wav"></audio>
-  <audio data-key="83" src="sounds/hihat.wav"></audio>
-  <audio data-key="68" src="sounds/kick.wav"></audio>
-  <audio data-key="70" src="sounds/openhat.wav"></audio>
-  <audio data-key="71" src="sounds/boom.wav"></audio>
-  <audio data-key="72" src="sounds/ride.wav"></audio>
-  <audio data-key="74" src="sounds/snare.wav"></audio>
-  <audio data-key="75" src="sounds/tom.wav"></audio>
-  <audio data-key="76" src="sounds/tink.wav"></audio>
+  <audio data-key="65" src="soundsDrum/clap.wav"></audio>
+  <audio data-key="83" src="soundsDrum/hihat.wav"></audio>
+  <audio data-key="68" src="soundsDrum/kick.wav"></audio>
+  <audio data-key="70" src="soundsDrum/openhat.wav"></audio>
+  <audio data-key="71" src="soundsDrum/boom.wav"></audio>
+  <audio data-key="72" src="soundsDrum/ride.wav"></audio>
+  <audio data-key="74" src="soundsDrum/snare.wav"></audio>
+  <audio data-key="75" src="soundsDrum/tom.wav"></audio>
+  <audio data-key="76" src="soundsDrum/tink.wav"></audio>
 
-<script>
-
-</script>
+  <script>
+    window.addEventListener('keydown', function(e) {
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      if (!audio) return;
+      audio.play();
+    });
+  </script>
 
 
 </body>
+
 </html>

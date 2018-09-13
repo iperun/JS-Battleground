@@ -7,7 +7,7 @@
 }
 
 html {
-  color: #555;
+  color: #0a0909;
   text-rendering: optimizeLegibility;
 }
 
@@ -19,7 +19,9 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg.jpg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden;
 }
 
 .content {
@@ -54,7 +56,7 @@ a:hover {
 
 h2 {
   text-align: center;
-  margin: 20% auto;
+  margin: 16% auto;
   background: rgba(0, 0, 0, 0.5);
   width: 20%;
   font-size: 2em;

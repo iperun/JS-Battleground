@@ -1,0 +1,10 @@
+html {
+  background: url(img/markus-spiske-1054398-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'helvetica neue';
+  text-align: center;
+  font-size: 10px;
+  height: 100vh;
+}

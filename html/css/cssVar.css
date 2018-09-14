@@ -29,5 +29,8 @@ img {
 
 input {
   width: 100px;
+}
+
+#base {
   vertical-align: 8px;
 }

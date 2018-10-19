@@ -20,12 +20,24 @@ const recognition = new SpeechRecognition();
 recognition.interimResults = true;
 
 let p = document.createElement('p');
-cosnt words = document.querySelector('.words');
+const words = document.querySelector('.words');
 words.appendChild(p);
 
-recognition.addEventLitender('result', e => {
-  console.log(e.results);
-})
+recognition.addEventListener('result', e => {
+  const transcript = Array.from(e.results)
+  .map(result =>results[0])
+  .map(results => reults.transcript)
+  .join('')
+
+  p.textContent = transcript;
+  if(e.rsults[0].isFinal) {
+    p = document.createElement('p');
+    words.appendChild(p);
+  }
+console.log(transcript);
+});
+
+recognition.addEventListener('endt', recognition.start);
 
 recognition.start();
 

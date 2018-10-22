@@ -82,6 +82,18 @@ h3, h4 {
 
 
   <script>
+const arrow = document.querySelector('.arrow');
+const speed = document.querySelector('.speed-value');
+
+navigator.geolocation.watchPosition((data) => {
+  speed.textContent = data.coords.speed;
+  arrow.style.transform = `rotate(${data.coords.heading}deg)`;
+}, (err => {
+  console.err(err);
+  alert('You have to allow to use this application!')
+}));
+
+
   </script>
 </body>
 

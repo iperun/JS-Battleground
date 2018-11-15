@@ -1,2 +1,3 @@
 # JS-Battleground
-Used for mini projects and JavaScript testing
+
+Building all kinds of fun stuff with Javascript!

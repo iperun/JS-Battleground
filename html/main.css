@@ -37,7 +37,8 @@ canvas.ready {
   width: 100%;
   max-width: 700px;
   font-family: sans-serif;
-  text-shadow: 0px 1px 1px gray;
+  box-shadow: 10px 10px 0px #636465;
+  background: #000000;
 }
 
 .items {
@@ -49,6 +50,12 @@ h1 {
   font-weight: 300;
   letter-spacing: 2px;
   color: #2196f3
+}
+
+a {
+  color: #FFEB3B;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 p {
